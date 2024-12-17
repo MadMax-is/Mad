@@ -1,0 +1,97 @@
+:root {
+  --primary: #979696;
+  --bg: #010101;
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(grey1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    justify-content: center;
+  }
+
+  .login {
+    background: transparent;
+    width: 28rem;
+    color: var(--bg);
+    border: 0.2px solid #0000007a;
+    border-radius: 2rem;
+    padding: 3rem 4rem;
+    box-shadow: 2px 2px 3px #010101;
+    backdrop-filter: blur(0.3rem);
+  }
+
+  .login h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 1rem;
+    color: #000000;
+  }
+  .login .square {
+    width: 100%;
+    height: 4rem;
+    margin: 4rem 0;
+  }
+
+  .square input {
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 0.2rem solid #000000;
+    border-radius: 3rem;
+    font-size: 1.2rem;
+    padding: 20px 45px 20px 20px;
+  }
+
+  .square input::placeholder {
+    color: #000000;
+    font-size: 1.5rem;
+  }
+
+  .login .remember {
+    display: flex;
+    justify-content: left;
+    font-size: 1.2rem;
+    margin: -50px 0 25px;
+    color: #2e2e2e;
+  }
+
+  .remember label input {
+    accent-color: #fff;
+  }
+
+  .login .button {
+    width: 100%;
+    height: 4rem;
+    background: linear-gradient(
+      0deg,
+      rgb(85, 85, 85) 8%,
+      rgba(128, 128, 128, 0.39) 55%
+    );
+    border: none;
+    border-radius: 3rem;
+    outline: none;
+    box-shadow: 2px 2px 3 px #010101;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #000000;
+    font-weight: 500;
+  }
+  .login .button a {
+    color: #000000;
+    border: none;
+    text-decoration: none;
+  }
+}
